@@ -1,0 +1,65 @@
+/**
+ * Admin styles for Live Connect plugin
+ */
+
+.live-connect-settings {
+    max-width: 800px;
+}
+
+.live-connect-settings .form-table th {
+    width: 200px;
+}
+
+.live-connect-settings .description {
+    font-style: italic;
+    color: #666;
+}
+
+#sync-status {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
+}
+
+#sync-status.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    display: block;
+}
+
+#sync-status.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    display: block;
+}
+
+#sync-status.loading {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+    display: block;
+}
+
+#manual-sync-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.live-connect-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: live-connect-spin 1s linear infinite;
+    margin-right: 8px;
+}
+
+@keyframes live-connect-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
